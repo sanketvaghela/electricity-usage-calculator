@@ -1,0 +1,30 @@
+ <link rel="stylesheet" href="styles.css">
+
+<div class="container">
+    <h3>Electricity Usage Calculator</h3>
+    <div class="card">
+        <h4>Per Unit Price</h4>
+        <label for="unit_price">Price (₹):</label>
+        <input id="unit_price" name="unit_price" value="9" placeholder="Enter Unit Price" />
+    </div>
+    <div class="card">
+        <h4>For Motor</h4>
+        <label for="motor_prev">Previous Month Unit:</label>
+        <input id="motor_prev" name="motor_prev" value="0" placeholder="Enter Previous Month Unit" />
+        <label for="motor_current">Current Month Unit:</label>
+        <input id="motor_current" name="motor_current" value="0" placeholder="Enter Current Month Unit" />
+        <code id="motor_total_unit_consumed">Total Units Consumed: </code>
+    </div>
+    <div class="card">
+        <h4>For Home</h4>
+        <label for="home_prev">Previous Month Unit:</label>
+        <input id="home_prev" name="home_prev" value="0" placeholder="Enter Previous Month Unit" />
+        <label for="home_current">Current Month Unit:</label>
+        <input id="home_current" name="home_current" value="0" placeholder="Enter Current Month Unit" />
+        <code id="home_total_unit_consumed">Total Units Consumed: </code>
+    </div>
+    <h2 id="total_payable_value"></h2>
+    <button id="calculate">Calculate</button>
+</div>
+
+<script src="script.js"></script>
