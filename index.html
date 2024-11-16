@@ -105,22 +105,62 @@
     <div class="card">
         <h4>Per Unit Price</h4>
         <label for="unit_price">Price (₹):</label>
-        <input id="unit_price" name="unit_price" value="9" placeholder="Enter Unit Price" />
+        <input 
+            id="unit_price" 
+            name="unit_price" 
+            type="number" 
+            value="9" 
+            placeholder="Enter Unit Price" 
+            min="0" 
+            step="0.01" 
+        />
     </div>
     <div class="card">
         <h4>For Motor</h4>
         <label for="motor_prev">Previous Month Unit:</label>
-        <input id="motor_prev" name="motor_prev" value="0" placeholder="Enter Previous Month Unit" />
+        <input 
+            id="motor_prev" 
+            name="motor_prev" 
+            type="number" 
+            value="0" 
+            placeholder="Enter Previous Month Unit" 
+            min="0" 
+            step="1" 
+        />
         <label for="motor_current">Current Month Unit:</label>
-        <input id="motor_current" name="motor_current" value="0" placeholder="Enter Current Month Unit" />
+        <input 
+            id="motor_current" 
+            name="motor_current" 
+            type="number" 
+            value="0" 
+            placeholder="Enter Current Month Unit" 
+            min="0" 
+            step="1" 
+        />
         <code id="motor_total_unit_consumed">Total Units Consumed: </code>
     </div>
     <div class="card">
         <h4>For Home</h4>
         <label for="home_prev">Previous Month Unit:</label>
-        <input id="home_prev" name="home_prev" value="0" placeholder="Enter Previous Month Unit" />
+        <input 
+            id="home_prev" 
+            name="home_prev" 
+            type="number" 
+            value="0" 
+            placeholder="Enter Previous Month Unit" 
+            min="0" 
+            step="1" 
+        />
         <label for="home_current">Current Month Unit:</label>
-        <input id="home_current" name="home_current" value="0" placeholder="Enter Current Month Unit" />
+        <input 
+            id="home_current" 
+            name="home_current" 
+            type="number" 
+            value="0" 
+            placeholder="Enter Current Month Unit" 
+            min="0" 
+            step="1" 
+        />
         <code id="home_total_unit_consumed">Total Units Consumed: </code>
     </div>
     <h2 id="total_payable_value"></h2>
